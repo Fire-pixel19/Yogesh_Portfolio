@@ -69,10 +69,22 @@
     btn.append(img);
     if(key==='palamau'){const lbl=document.createElement('span');lbl.className='logo-caption';lbl.textContent='BETLA NIC';btn.append(lbl);}
     btn.addEventListener('click',()=>{
-     const match=document.querySelector(`[data-slug="${slug}"]`);
-     if(match){match.click();return;}
-     document.querySelector('.filter[data-filter="All"]')?.click();
-     requestAnimationFrame(()=>document.querySelector(`[data-slug="${slug}"]`)?.click());
+     const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
+     btn.classList.remove('is-clicked');
+     void btn.offsetWidth;
+     btn.classList.add('is-clicked');
+     clearTimeout(btn._clickTimer);
+     const openTarget=()=>{
+      const match=document.querySelector(`[data-slug="${slug}"]`);
+      if(match){match.click();return;}
+      document.querySelector('.filter[data-filter="All"]')?.click();
+      requestAnimationFrame(()=>document.querySelector(`[data-slug="${slug}"]`)?.click());
+     };
+     if(reduced){openTarget();return;}
+     btn._clickTimer=setTimeout(openTarget,140);
+    });
+    btn.addEventListener('animationend',e=>{
+     if(e.animationName==='v6-logo-pop')btn.classList.remove('is-clicked');
     });
     set.appendChild(btn);
    }

@@ -186,3 +186,43 @@ body.theme-colorful{background-image:radial-gradient(ellipse 65% 30% at 83% 8%,r
   -webkit-text-stroke:0 transparent!important;
   letter-spacing:-.025em!important;
 }
+
+/* Marquee logo click animation: tactile spring pop + radial pulse ring (MIT-style CSS keyframes, no extra dependencies). */
+.brand-marquee-logo::after{
+  content:"";
+  position:absolute;
+  inset:-10px -14px;
+  border-radius:999px;
+  pointer-events:none;
+  opacity:0;
+  background:radial-gradient(circle,rgba(143,216,255,.32) 0%,rgba(143,216,255,.10) 48%,transparent 72%);
+  border:1px solid rgba(170,220,255,.45);
+  transform:scale(.55);
+}
+.theme-colorful .brand-marquee-logo::after{
+  background:radial-gradient(circle,rgba(167,139,250,.36) 0%,rgba(96,165,250,.14) 48%,transparent 72%);
+  border-color:rgba(196,181,253,.52);
+}
+.brand-marquee-logo:active{
+  transform:translateY(-2px) scale(.94);
+}
+.brand-marquee-logo.is-clicked{
+  opacity:1;
+  animation:v6-logo-pop .44s cubic-bezier(.22,1.35,.36,1) both;
+}
+.brand-marquee-logo.is-clicked::after{
+  animation:v6-logo-ring .54s cubic-bezier(.22,1,.36,1) both;
+}
+@keyframes v6-logo-pop{
+  0%{transform:translateY(-2px) scale(.93);filter:drop-shadow(0 0 6px rgba(170,211,255,.35))}
+  45%{transform:translateY(-8px) scale(1.12);filter:drop-shadow(0 0 22px rgba(170,211,255,.82))}
+  100%{transform:translateY(-5px) scale(1.04);filter:drop-shadow(0 0 14px rgba(170,211,255,.40))}
+}
+@keyframes v6-logo-ring{
+  0%{opacity:.9;transform:scale(.55)}
+  100%{opacity:0;transform:scale(1.55)}
+}
+@media(prefers-reduced-motion:reduce){
+  .brand-marquee-logo:active{transform:none}
+  .brand-marquee-logo.is-clicked,.brand-marquee-logo.is-clicked::after{animation:none!important}
+}
