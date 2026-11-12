@@ -1,0 +1,40 @@
+[
+  {
+    "device": "Desktop",
+    "width": 1440,
+    "html_scroll_width": 1440,
+    "cards": 12,
+    "heading": "YOGESH\nVIKHANKAR.",
+    "errors": [],
+    "colorful": true,
+    "project_open": true,
+    "jcb_gallery": 17,
+    "lightbox_open": true,
+    "counter": "2 / 17 \u00b7 Caf\u00e9 and networking courtyard"
+  },
+  {
+    "device": "Tablet",
+    "width": 820,
+    "html_scroll_width": 820,
+    "cards": 12,
+    "heading": "YOGESH\nVIKHANKAR.",
+    "errors": []
+  },
+  {
+    "device": "Mobile",
+    "width": 390,
+    "html_scroll_width": 390,
+    "cards": 12,
+    "heading": "YOGESH\nVIKHANKAR.",
+    "errors": [],
+    "mobile_menu": true
+  },
+  {
+    "device": "SmallMobile",
+    "width": 320,
+    "html_scroll_width": 320,
+    "cards": 12,
+    "heading": "YOGESH\nVIKHANKAR.",
+    "errors": []
+  }
+]

@@ -1,0 +1,240 @@
+{
+  "amazon": [
+    {
+      "src": "assets/amazon-01.webp",
+      "caption": "The Mandala Experience"
+    },
+    {
+      "src": "assets/amazon-02.webp",
+      "caption": "Main stage environment"
+    },
+    {
+      "src": "assets/amazon-03.webp",
+      "caption": "Entry and registration"
+    },
+    {
+      "src": "assets/amazon-04.webp",
+      "caption": "Exhibition booths"
+    },
+    {
+      "src": "assets/amazon-05.webp",
+      "caption": "Sambhav Studio and Café"
+    }
+  ],
+  "betla": [
+    {
+      "src": "assets/betla-01.webp",
+      "caption": "Exterior environment"
+    },
+    {
+      "src": "assets/betla-02.webp",
+      "caption": "Nature-themed reception"
+    },
+    {
+      "src": "assets/betla-03.webp",
+      "caption": "Immersive river tunnel"
+    },
+    {
+      "src": "assets/betla-04.webp",
+      "caption": "Projection room"
+    },
+    {
+      "src": "assets/betla-05.webp",
+      "caption": "Tribal exhibit"
+    },
+    {
+      "src": "assets/betla-06.webp",
+      "caption": "Museum room"
+    },
+    {
+      "src": "assets/betla-07.webp",
+      "caption": "Glow Garden"
+    }
+  ],
+  "linkedin-tc": [
+    {
+      "src": "assets/linkedin-tc-01.webp",
+      "caption": "Lotus Ballroom conference"
+    },
+    {
+      "src": "assets/linkedin-tc-02.webp",
+      "caption": "Talent Connect stage"
+    },
+    {
+      "src": "assets/linkedin-tc-03.webp",
+      "caption": "Third-floor entrance"
+    },
+    {
+      "src": "assets/linkedin-tc-04.webp",
+      "caption": "Passage and registration"
+    },
+    {
+      "src": "assets/linkedin-tc-05.webp",
+      "caption": "Experience booths"
+    }
+  ],
+  "jio": [
+    {
+      "src": "assets/jio-01.webp",
+      "caption": "Ballroom stage and seating"
+    },
+    {
+      "src": "assets/jio-02.webp",
+      "caption": "F&B lounge"
+    },
+    {
+      "src": "assets/jio-03.webp",
+      "caption": "Networking area"
+    },
+    {
+      "src": "assets/jio-04.webp",
+      "caption": "Third-floor registration"
+    },
+    {
+      "src": "assets/jio-05.webp",
+      "caption": "Entrance arch gate"
+    }
+  ],
+  "phonepe": [
+    {
+      "src": "assets/phonepe-01.webp",
+      "caption": "Mezzanine exhibition stall"
+    },
+    {
+      "src": "assets/phonepe-02.webp",
+      "caption": "Upper-level aerial view"
+    },
+    {
+      "src": "assets/phonepe-03.webp",
+      "caption": "Front elevation"
+    },
+    {
+      "src": "assets/phonepe-04.webp",
+      "caption": "Activation zone"
+    }
+  ],
+  "anymind": [
+    {
+      "src": "assets/anymind-01.webp",
+      "caption": "AnyMind booth — front view"
+    },
+    {
+      "src": "assets/anymind-02.webp",
+      "caption": "AnyMind corner view"
+    },
+    {
+      "src": "assets/anymind-03.webp",
+      "caption": "Branded display"
+    },
+    {
+      "src": "assets/anymind-04.webp",
+      "caption": "Booth perspective"
+    }
+  ],
+  "tata": [
+    {
+      "src": "assets/tata-01.webp",
+      "caption": "Stage concept 01 — ONE WORLD"
+    },
+    {
+      "src": "assets/tata-02.webp",
+      "caption": "Stage concept 01 — oblique"
+    },
+    {
+      "src": "assets/tata-03.webp",
+      "caption": "Stage concept 02 — BEYOND BOUNDARIES"
+    },
+    {
+      "src": "assets/tata-04.webp",
+      "caption": "Stage concept 02 — oblique"
+    }
+  ],
+  "charcha": [
+    {
+      "src": "assets/charcha-01.webp",
+      "caption": "Nighttime event installation"
+    },
+    {
+      "src": "assets/charcha-02.webp",
+      "caption": "Daytime event environment"
+    },
+    {
+      "src": "assets/charcha-03.webp",
+      "caption": "Outdoor activations — night"
+    },
+    {
+      "src": "assets/charcha-04.webp",
+      "caption": "Blue entrance arch"
+    },
+    {
+      "src": "assets/charcha-05.webp",
+      "caption": "Daytime experience counter"
+    }
+  ],
+  "saint-gobain": [
+    {
+      "src": "assets/saint-gobain-01.webp",
+      "caption": "Exhibition stall corner"
+    },
+    {
+      "src": "assets/saint-gobain-02.webp",
+      "caption": "Front perspective"
+    },
+    {
+      "src": "assets/saint-gobain-03.webp",
+      "caption": "Product demonstration"
+    },
+    {
+      "src": "assets/saint-gobain-04.webp",
+      "caption": "Experience space"
+    },
+    {
+      "src": "assets/saint-gobain-05.webp",
+      "caption": "Celebratory brand graphics"
+    }
+  ],
+  "castrol": [
+    {
+      "src": "assets/castrol-01.webp",
+      "caption": "Exhibition concept A"
+    },
+    {
+      "src": "assets/castrol-02.webp",
+      "caption": "Exhibition concept B"
+    },
+    {
+      "src": "assets/castrol-03.webp",
+      "caption": "Exhibition concept C"
+    },
+    {
+      "src": "assets/castrol-04.webp",
+      "caption": "Branded concept D"
+    },
+    {
+      "src": "assets/castrol-05.webp",
+      "caption": "Branded concept E"
+    }
+  ],
+  "linkedin-alist": [
+    {
+      "src": "assets/linkedin-alist-01.webp",
+      "caption": "A-List — banquet event"
+    },
+    {
+      "src": "assets/linkedin-alist-02.webp",
+      "caption": "A-List — banquet angle"
+    },
+    {
+      "src": "assets/linkedin-alist-03.webp",
+      "caption": "A-List — banquet wide"
+    },
+    {
+      "src": "assets/linkedin-alist-04.webp",
+      "caption": "A-List — separate conversation event"
+    },
+    {
+      "src": "assets/linkedin-alist-05.webp",
+      "caption": "A-List — separate conversation event detail"
+    }
+  ]
+}

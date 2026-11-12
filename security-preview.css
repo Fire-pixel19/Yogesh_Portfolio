@@ -1,0 +1,15 @@
+/* Optional security preview: only images are non-draggable, not text or controls. */
+img[data-preview-protected] { -webkit-user-drag: none; user-select: none; -webkit-user-select: none; }
+.preview-security-notice {
+  position: fixed; z-index: 999999; left: 50%; bottom: 20px;
+  transform: translate(-50%, 14px); max-width: min(94vw, 480px);
+  background: rgba(9,24,38,.94); color: #eaf5ff; border: 1px solid rgba(152,212,234,.35);
+  box-shadow: 0 12px 38px rgba(0,0,0,.35); padding: 11px 17px;
+  border-radius: 14px; font: 500 12px/1.5 Inter,Arial,sans-serif;
+  letter-spacing: .01em; text-align: center; pointer-events: none;
+  opacity: 0; transition: opacity .22s ease,transform .22s ease;
+}
+.preview-security-notice.is-visible { opacity: 1; transform: translate(-50%,0); }
+@media (prefers-reduced-motion:reduce) {
+ .preview-security-notice { transition:none; }
+}

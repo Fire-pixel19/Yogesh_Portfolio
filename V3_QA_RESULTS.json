@@ -1,0 +1,17 @@
+{
+  "version": "V3",
+  "project_stories": 12,
+  "batch_count": 13,
+  "original_v2_views_preserved_and_sha256_verified": 127,
+  "additional_jcb_views": 17,
+  "total_views": 144,
+  "broken_image_paths": 0,
+  "all_webp_decoding_verified": true,
+  "testing": "Automated headless Chrome desktop/tablet/mobile smoke tests, with browser script execution and image viewer navigation. Not a promise of flawless performance on every device.",
+  "still_pending": [
+    "User contact details",
+    "Optional resume",
+    "Asset licensing/attribution confirmation",
+    "Final real-device and real-network QA before publish"
+  ]
+}

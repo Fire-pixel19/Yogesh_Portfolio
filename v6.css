@@ -1,0 +1,188 @@
+/* V6 | Ambient Depth Experience | Art-first, responsive, exact-logo source files */
+:root{--bg:#070b13;--bg2:#0d1421;--surface:#131c2b;--surface2:#19293a;--ink:#f5f7fa;--muted:#b5c6d7;--line:rgba(213,232,248,.18);--accent:#dfa988;--accent2:#a5d9f4;--accent3:#c695db;--grad:linear-gradient(108deg,#fff 4%,#badbee 54%,#eebc9e);--v6-glow-opacity:.80;}
+body.theme-colorful{--bg:#121020;--bg2:#1b1733;--surface:#24203c;--surface2:#312b50;--ink:#fff9ff;--muted:#d0cce9;--line:rgba(239,223,255,.20);--accent:#f5b47a;--accent2:#c8b9ff;--accent3:#ef8fc3;--grad:linear-gradient(110deg,#fff,#c5b3fd 48%,#ffa5b5);--v6-glow-opacity:.88;}
+body{background-color:var(--bg)!important;background-image:radial-gradient(ellipse 60% 31% at 88% 6%,rgba(48,92,143,.13),transparent 73%),radial-gradient(ellipse 37% 38% at 0% 68%,rgba(38,70,96,.06),transparent 80%)!important}
+body.theme-colorful{background-image:radial-gradient(ellipse 65% 30% at 83% 8%,rgba(140,72,185,.20),transparent 72%),radial-gradient(ellipse 46% 37% at 10% 65%,rgba(113,59,143,.12),transparent 73%)!important}
+.theme-colorful .site-header,.theme-colorful .site-header.scrolled{background:rgba(24,17,43,.90)!important}
+.site-header,.site-header.scrolled{background:rgba(7,12,22,.88)!important}
+/* Section identifiers are meant to be visible, not micro labels. */
+.section-top .kicker,.section-inner .kicker,.statement-inner>.kicker,.about-side>.kicker,.contact-section>.kicker,.portal-edition,.detail-section-number{font-size:clamp(12px,1.03vw,14px)!important;font-weight:800!important;letter-spacing:.105em!important;color:var(--accent2)!important}
+.kicker{font-weight:750}
+/* HERO: image itself dictates its frame. No artificial empty black sidebands. */
+.hero{grid-template-columns:minmax(370px,1fr) minmax(0,1.16fr)!important;gap:clamp(34px,3.6vw,68px)!important;min-height:min(870px,100svh);padding-top:clamp(116px,11vw,160px);padding-bottom:clamp(70px,7vw,116px);}
+.hero h1{font-size:clamp(54px,5.2vw,92px)!important;line-height:1.025!important;letter-spacing:-.068em!important}
+.hero-copy{max-width:680px}
+.hero-art,.portal-art{height:auto!important;min-height:0!important;align-self:center;display:flex;flex-direction:column;justify-content:center;gap:14px;z-index:2}
+.portal-edition{position:relative!important;top:auto!important;left:auto!important;right:auto!important;order:0;margin:0 0 2px 2px}
+.portal-screen{position:relative!important;inset:auto!important;top:auto!important;left:auto!important;right:auto!important;bottom:auto!important;display:block!important;width:100%!important;height:auto!important;aspect-ratio:16/9;min-height:0!important;background:transparent!important;border-radius:15px!important;overflow:hidden!important;box-shadow:0 37px 80px -26px rgba(0,0,0,.75),0 0 0 1px rgba(225,237,255,.20)!important;order:1;isolation:isolate}
+.portal-screen .portal-image{position:relative!important;inset:auto!important;display:block!important;width:100%!important;height:auto!important;aspect-ratio:16/9;object-fit:contain!important;background:transparent!important;transform:none!important;filter:none!important}
+.portal-screen:hover .portal-image{transform:scale(1.014)!important}
+.portal-vignette{z-index:2!important;pointer-events:none;background:linear-gradient(180deg,rgba(2,7,12,.35),transparent 26%,transparent 44%,rgba(2,7,12,.72))!important}
+.portal-topline{z-index:4!important}.portal-topline span:empty{display:none!important}
+.portal-controls{position:relative!important;inset:auto!important;bottom:auto!important;top:auto!important;left:auto!important;right:auto!important;order:2;margin-top:12px!important;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:7px;width:100%!important}
+.portal-select{min-width:0}
+.portal-orbit{display:block!important;position:absolute!important;pointer-events:none;z-index:-1;border:1px solid rgba(147,194,239,.23)!important;box-shadow:0 0 50px rgba(94,145,221,.075);border-radius:50%;animation:v6-ring 34s linear infinite}
+.portal-orbit-outer{width:112%;aspect-ratio:1.86;top:-14%;left:-8%;transform-origin:50% 50%}
+.portal-orbit-inner{width:92%;aspect-ratio:1.48;top:-7%;left:7%;animation-direction:reverse;animation-duration:47s}
+@keyframes v6-ring{0%{transform:rotate(-8deg) scale(1)}50%{transform:rotate(4deg) scale(1.035)}100%{transform:rotate(352deg) scale(1)}}
+/* A sampled four-edge luminous halo, emitted behind the render, not painted on its border */
+.hero-art::before,.project-card::before,.gallery-frame::before,.detail-hero::before{content:''!important;position:absolute!important;pointer-events:none!important;z-index:-1!important;inset:-22px!important;opacity:.60!important;transform:translate3d(0,7px,0) scale(1)!important;border-radius:19px!important;background:
+ radial-gradient(ellipse 66% 34% at 50% 0%, rgba(var(--edge-top,64,136,208),.94),transparent 92%),
+ radial-gradient(ellipse 28% 71% at 100% 50%,rgba(var(--edge-right,107,105,208),.91),transparent 91%),
+ radial-gradient(ellipse 70% 34% at 50% 100%,rgba(var(--edge-bottom,49,148,193),.88),transparent 93%),
+ radial-gradient(ellipse 28% 70% at 0% 50%,rgba(var(--edge-left,133,74,184),.91),transparent 92%)!important;
+ filter:blur(26px) saturate(1.38)!important;transition:opacity .46s ease,transform .55s var(--ease),filter .55s ease!important;box-shadow:none!important;}
+.hero-art::before{inset:7% -17px 17% -17px!important;opacity:.65!important;filter:blur(34px) saturate(1.55)!important}
+.hero-art:hover::before,.hero-art:focus-within::before{opacity:1!important;transform:translate3d(0,8px,0) scale(1.06)!important}
+.project-card:hover::before,.project-card:focus-visible::before,.gallery-frame:hover::before,.gallery-frame:focus-visible::before{opacity:1!important;filter:blur(32px) saturate(1.62)!important;transform:translate3d(0,7px,0) scale(1.042)!important}
+/* BRAND MARQUEE: authentic supplied source PNGs are not transformed, squeezed or redrawn. */
+.brand-marquee{position:relative;z-index:2;background:linear-gradient(90deg,rgba(10,20,33,.93),rgba(13,29,48,.95),rgba(10,20,33,.94));border-block:1px solid rgba(214,238,255,.10);padding:23px 0 27px;overflow:hidden;isolation:isolate}
+.theme-colorful .brand-marquee{background:linear-gradient(90deg,#1d1a33,#2c2544,#1d1a33)}
+.brand-marquee-heading{margin:0 auto 20px;text-align:center;font:700 11px/1.3 'Inter',sans-serif;letter-spacing:.24em;color:var(--accent2)}
+.brand-marquee-viewport{width:100%;overflow:hidden;position:relative;mask-image:linear-gradient(90deg,transparent 0%,#000 5%,#000 95%,transparent 100%)}
+.brand-marquee-track{display:flex;align-items:center;gap:0;width:max-content;will-change:transform;animation:v6-marquee 61s linear infinite}
+.brand-marquee-set{display:flex;align-items:center;gap:clamp(28px,3vw,62px);padding-inline:clamp(20px,2.9vw,60px);flex:0 0 auto}
+.brand-marquee-logo{display:flex;align-items:center;justify-content:center;flex:0 0 auto;position:relative;min-height:87px;max-width:250px;opacity:.82;transition:opacity .3s ease,transform .35s var(--ease),filter .35s;filter:drop-shadow(0 0 1px rgba(255,255,255,.08))}
+.brand-marquee-logo:hover,.brand-marquee-logo:focus-visible{opacity:1;transform:translateY(-5px) scale(1.04);filter:drop-shadow(0 0 14px rgba(170,211,255,.40))}
+.brand-marquee-logo img{height:42px;width:auto;max-width:206px;object-fit:contain;display:block;pointer-events:none}
+.brand-marquee-logo[data-brand="botanical"] img{height:73px;max-width:194px}
+.brand-marquee-logo[data-brand="palamau"] img{height:77px;max-width:88px}
+.brand-marquee-logo[data-brand="fancode"] img{height:80px;max-width:157px}
+.brand-marquee-logo[data-brand="jcb"] img{height:51px;max-width:156px}
+.brand-marquee-logo[data-brand="tata"] img{height:60px}
+.brand-marquee-logo .logo-caption{position:absolute;top:calc(100% - 8px);font-size:9px;letter-spacing:.09em;color:var(--muted);font-weight:650;white-space:nowrap}
+@keyframes v6-marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.brand-marquee-viewport:hover .brand-marquee-track{animation-play-state:paused}
+/* WORK WALL: no empty media panels, no vertical blank space to right of an odd final card. */
+.project-grid{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:clamp(22px,2.75vw,44px)!important;align-items:start!important;grid-auto-flow:row dense}
+.project-card,.project-card.featured,.project-card.v5-wide,.project-card.v5-last{grid-column:auto!important;display:flex!important;flex-direction:column!important;align-self:start!important;min-height:0!important;overflow:visible!important;isolation:isolate!important;transform-style:flat!important;filter:none!important;background:transparent!important;box-shadow:0 24px 70px -43px rgba(0,0,0,.8)!important}
+.project-card .project-media,.project-card.featured .project-media,.project-card:not(.featured) .project-media,.project-card.v5-wide .project-media,.project-card.v5-last .project-media{height:auto!important;min-height:0!important;aspect-ratio:unset!important;background:transparent!important;border:0!important;border-radius:15px 15px 0 0!important;overflow:hidden!important;position:relative!important;display:block!important}
+.project-card .project-media-mat,.project-media-mat{position:relative!important;inset:auto!important;width:100%!important;height:auto!important;background:transparent!important;display:block!important;overflow:hidden!important}
+.project-card .project-media img,.project-media img{display:block!important;width:100%!important;height:auto!important;aspect-ratio:16/9!important;object-fit:contain!important;background:transparent!important;max-height:none!important;filter:none!important;transform:translateZ(0)}
+.project-card .project-body,.project-card.v5-wide .project-body,.project-card.v5-last .project-body{width:100%!important;min-height:0!important;display:flex!important;align-items:center!important;justify-content:space-between!important;gap:15px!important;background:linear-gradient(142deg,#162438,#101a2a)!important;border:1px solid rgba(213,232,255,.17)!important;border-top:0!important;border-radius:0 0 15px 15px!important;padding:clamp(20px,2.7vw,30px)!important}
+.theme-colorful .project-card .project-body{background:linear-gradient(140deg,#292440,#1f1c38)!important}
+.project-card .project-body h3{font-size:clamp(23px,2.1vw,34px)!important}
+.project-card .project-body p{font-size:13px;max-width:550px}
+.project-card .project-timeline{font-size:11px}
+.project-card.v6-wide{grid-column:1/-1!important;display:grid!important;grid-template-columns:minmax(0,1.42fr) minmax(260px,.75fr)!important;align-items:stretch!important}
+.project-card.v6-wide .project-media{border-radius:15px 0 0 15px!important;height:100%!important;display:flex!important;align-items:center!important;background:transparent!important}
+.project-card.v6-wide .project-media-mat{height:100%!important}
+.project-card.v6-wide .project-media img{width:100%!important;height:100%!important;aspect-ratio:auto!important;object-fit:cover!important}
+.project-card.v6-wide .project-body{height:100%!important;align-items:center!important;justify-content:center!important;border-top:1px solid rgba(213,232,255,.17)!important;border-left:0!important;border-radius:0 15px 15px 0!important;padding:clamp(25px,3.8vw,56px)!important}
+.project-card.v6-wide .project-body h3{font-size:clamp(28px,3.2vw,47px)!important}
+.project-card:hover{transform:translate3d(0,-8px,0)!important;box-shadow:0 36px 78px -35px rgba(0,0,0,.68)!important}
+.project-card:hover .project-media img{transform:scale(1.025)!important}
+.project-card .project-type{font-size:11px}
+/* CASE STUDY: image fills its own natural dimensions; text lives below with intentionally generous separation. */
+.project-dialog{overflow-y:auto!important;overscroll-behavior:contain;scroll-behavior:auto!important;background:var(--bg2)!important}
+.project-dialog-body{scroll-behavior:auto!important}
+.project-dialog .detail-hero{position:relative!important;display:block!important;height:auto!important;overflow:visible!important;background:transparent!important;isolation:isolate!important;margin:34px clamp(18px,4vw,65px) 0!important;box-shadow:none!important}
+.project-dialog .detail-hero::before{inset:10% -20px 24% -20px!important;z-index:-1!important;opacity:.64!important;filter:blur(37px) saturate(1.3)!important}
+.project-dialog .detail-hero>img{display:block!important;width:100%!important;height:auto!important;aspect-ratio:16/9!important;object-fit:contain!important;position:relative!important;background:transparent!important;border-radius:12px 12px 0 0;box-shadow:0 38px 86px -52px rgba(0,0,0,.84)}
+.project-dialog .detail-hero-info{position:relative!important;display:block!important;inset:auto!important;background:transparent!important;padding:clamp(32px,4.1vw,63px) 0 clamp(30px,4vw,54px)!important}
+.project-dialog .detail-hero-info h2{font-size:clamp(28px,3.4vw,52px)!important}
+.detail-content{padding-top:clamp(48px,5.3vw,83px)!important}
+.detail-gallery{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:clamp(22px,3vw,47px)!important;align-items:start!important;grid-auto-flow:row dense}
+.detail-gallery .gallery-frame,.detail-gallery .gallery-frame:nth-child(7n+1),.detail-gallery .gallery-frame:nth-child(8n+1){grid-column:auto!important;display:block!important;position:relative!important;width:100%!important;min-width:0!important;height:auto!important;overflow:visible!important;isolation:isolate!important;background:transparent!important;border:0!important;box-shadow:none!important;border-radius:13px!important}
+.detail-gallery .gallery-frame.v6-gallery-wide{grid-column:1/-1!important}
+.detail-gallery .gallery-frame::before{inset:-10px -12px 15% -12px!important;opacity:.68!important;filter:blur(25px) saturate(1.38)!important}
+.detail-gallery .gallery-media{position:relative!important;display:block!important;overflow:hidden!important;border-radius:13px 13px 0 0!important;background:transparent!important}
+.detail-gallery .gallery-media img,.detail-gallery .gallery-frame img{position:relative!important;display:block!important;width:100%!important;height:auto!important;aspect-ratio:auto!important;max-height:none!important;object-fit:contain!important;background:transparent!important;transition:transform .4s var(--ease)}
+.detail-gallery .gallery-frame:hover .gallery-media img{transform:scale(1.025)!important}
+.detail-gallery .frame-caption{background:linear-gradient(125deg,#17243a,#0e1829)!important;display:flex!important;align-items:center!important;justify-content:space-between!important;flex-wrap:wrap!important;gap:10px!important;padding:15px 20px!important;min-height:59px!important;border:1px solid var(--line)!important;border-radius:0 0 12px 12px!important;position:relative}
+.theme-colorful .detail-gallery .frame-caption{background:linear-gradient(125deg,#28233e,#1d1a31)!important}
+.detail-gallery button[hidden]{display:none!important}
+.gallery-zoom{font-size:19px!important;letter-spacing:0!important;max-width:38px!important;height:38px!important;right:15px!important;bottom:15px!important}
+.lightbox{background:radial-gradient(ellipse at 50% 47%,rgba(var(--edge-top,69,92,174),.23),transparent 65%),#070c15!important}
+/* About portrait: orbit behind image, no awkward YV/01 stamps. */
+.portrait-stamp,.portrait-sidecode{display:none!important}
+.portrait-stage{isolation:isolate;overflow:visible!important}
+.portrait-stage .portrait-border{z-index:2;box-shadow:0 36px 89px -28px rgba(0,0,0,.6),0 0 57px rgba(78,134,193,.11);position:relative}
+.v6-portrait-orbit{position:absolute;z-index:0;pointer-events:none;border:1px solid rgba(181,220,240,.28);border-radius:50%;left:-16%;top:14%;width:132%;aspect-ratio:1.08;animation:v6-ring 39s linear infinite;transform-origin:center}
+.v6-portrait-orbit-b{width:110%;left:-5%;top:8%;aspect-ratio:1.12;animation-duration:47s;animation-direction:reverse;border-style:dashed;opacity:.65}
+.portrait-aura{opacity:.54!important;filter:blur(46px)!important}
+/* Extra meaningful services */
+.expertise-list .expertise-row{min-height:87px}
+/* Decorative labels are not content. */
+@media(max-width:1100px){
+ .hero{grid-template-columns:minmax(285px,.95fr) minmax(0,1.05fr)!important;gap:20px!important}
+ .hero h1{font-size:clamp(46px,5.15vw,74px)!important}
+ .brand-marquee-logo img{height:37px}
+ .project-card.v6-wide{grid-template-columns:minmax(0,1.28fr) minmax(250px,.72fr)!important}
+}
+@media(max-width:760px){
+ .hero{grid-template-columns:1fr!important;min-height:0!important;gap:35px!important;padding-top:119px!important;padding-bottom:100px!important}
+ .hero h1{font-size:clamp(49px,9vw,86px)!important}
+ .hero-copy{max-width:650px}.portal-art{margin-top:10px}
+ .portal-controls{gap:3px!important;margin-top:4px!important}.portal-select{font-size:9px!important;padding:12px 3px!important}
+ .project-grid{grid-template-columns:1fr!important;gap:27px!important}
+ .project-card.v6-wide{grid-column:auto!important;display:flex!important;flex-direction:column!important}
+ .project-card.v6-wide .project-media{height:auto!important;border-radius:13px 13px 0 0!important}
+ .project-card.v6-wide .project-media img{aspect-ratio:16/9!important;height:auto!important;object-fit:contain!important}
+ .project-card.v6-wide .project-body{border:1px solid var(--line)!important;border-top:0!important;border-radius:0 0 13px 13px!important}
+ .project-card.v6-wide .project-body h3{font-size:clamp(24px,6.2vw,34px)!important}
+ .project-card:hover{transform:none!important}
+ .detail-gallery{grid-template-columns:1fr!important;gap:26px!important}
+ .detail-gallery .gallery-frame.v6-gallery-wide{grid-column:auto!important}
+ .detail-intro aside{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .project-dialog .detail-hero{margin:27px 16px 0!important}
+ .project-dialog .detail-hero-info{padding:28px 5px 33px!important}
+ .brand-marquee-logo[data-brand="botanical"] img{height:61px}.brand-marquee-logo[data-brand="palamau"] img{height:66px}
+ .brand-marquee-logo[data-brand="fancode"] img{height:70px}
+ .brand-marquee-track{animation-duration:49s}
+ .v6-portrait-orbit{top:15%;width:108%;left:-4%}
+ .hero-art::before{filter:blur(23px)!important}
+}
+@media(max-width:420px){
+ .hero{padding-inline:19px}.hero h1{font-size:clamp(42px,11.8vw,53px)!important}
+ .project-dialog .detail-hero{margin:24px 10px 0!important}
+ .project-dialog .detail-hero-info h2{font-size:29px!important}
+ .detail-intro aside{grid-template-columns:1fr!important}
+ .brand-marquee-heading{font-size:10px}
+ .portal-controls{gap:2px}.portal-select{font-size:8px!important}
+}
+@media(prefers-reduced-motion:reduce){.portal-orbit,.v6-portrait-orbit,.brand-marquee-track{animation:none!important}.brand-marquee-track{transform:none!important}.project-card:hover,.gallery-frame:hover{transform:none!important}}
+/* The approved FanCode file includes generous transparent top/bottom padding. Present a window around its unchanged original pixels; never scale nonuniformly. */
+.brand-marquee-logo[data-brand="fancode"] img{width:160px!important;height:83px!important;max-width:160px!important;object-fit:cover!important;object-position:center 52%!important}
+/* No browser-default button tiles behind brand marks. */
+.brand-marquee-logo{appearance:none!important;background:transparent!important;border:0!important;box-shadow:none!important;padding:0!important;color:inherit;cursor:pointer}
+/* Featured media follows the entire image. Height is defined by the artwork, not a forced crop. */
+.project-card.v6-wide .project-media{height:auto!important;align-items:flex-start!important}
+.project-card.v6-wide .project-media-mat{height:auto!important}
+.project-card.v6-wide .project-media img{display:block!important;width:100%!important;height:auto!important;aspect-ratio:auto!important;object-fit:contain!important}
+
+
+/* V6.1 targeted bug fix — keep the original Palamau PNG untouched.
+   The BETLA NIC caption now participates in the button's intrinsic height,
+   so the marquee viewport cannot clip it beneath the image. */
+.brand-marquee-logo[data-brand="palamau"]{
+  flex-direction:column;
+  gap:6px;
+  min-height:112px;
+  padding:8px 4px 6px;
+  box-sizing:border-box;
+}
+.brand-marquee-logo[data-brand="palamau"] .logo-caption{
+  position:static;
+  top:auto;
+  display:block;
+  margin:0;
+  font-size:10px;
+  line-height:1.3;
+  font-weight:700;
+  letter-spacing:.08em;
+  color:#c6d5e7;
+  text-align:center;
+  white-space:nowrap;
+}
+@media(max-width:760px){
+  .brand-marquee-logo[data-brand="palamau"]{min-height:103px;gap:5px;padding:7px 3px 5px}
+  .brand-marquee-logo[data-brand="palamau"] .logo-caption{font-size:9px}
+}
+
+/* V6.2 · Contact-heading antialias/overlap correction only.
+   Retains the approved Plus Jakarta Sans font, weight and light-blue color. */
+#contactTitle em{
+  -webkit-text-stroke:0 transparent!important;
+  letter-spacing:-.025em!important;
+}

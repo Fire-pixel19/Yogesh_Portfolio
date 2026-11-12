@@ -1,0 +1,68 @@
+{
+  "version": "3.0",
+  "previous_v2_views": 127,
+  "jcb_added": 17,
+  "total_views": 144,
+  "projects": [
+    {
+      "slug": "amazon",
+      "count": 24,
+      "venue": "Bharat Mandapam, Pragati Maidan (ITPO), Delhi"
+    },
+    {
+      "slug": "betla",
+      "count": 26,
+      "venue": "Palamu District, Jharkhand"
+    },
+    {
+      "slug": "jcb",
+      "count": 17,
+      "venue": "Bharat Mobility Expo, Greater Noida"
+    },
+    {
+      "slug": "linkedin-tc",
+      "count": 16,
+      "venue": "Jio World Convention Centre (JWCC), BKC, Mumbai"
+    },
+    {
+      "slug": "jio",
+      "count": 16,
+      "venue": "Jio World Convention Centre (JWCC), BKC, Mumbai"
+    },
+    {
+      "slug": "phonepe",
+      "count": 7,
+      "venue": null
+    },
+    {
+      "slug": "anymind",
+      "count": 4,
+      "venue": "Dubai"
+    },
+    {
+      "slug": "tata",
+      "count": 6,
+      "venue": "JW Marriott Bengaluru Prestige Golfshire — Pitch Venue"
+    },
+    {
+      "slug": "charcha",
+      "count": 11,
+      "venue": "India Habitat Centre, New Delhi"
+    },
+    {
+      "slug": "saint-gobain",
+      "count": 5,
+      "venue": null
+    },
+    {
+      "slug": "castrol",
+      "count": 6,
+      "venue": "Multiple locations — Delhi, Haryana, Mumbai, Chennai, Bengaluru, Hyderabad, Kochi"
+    },
+    {
+      "slug": "linkedin-alist",
+      "count": 6,
+      "venue": "Multiple venues — JW Marriott Delhi, Andaz Delhi, Bay Club Mumbai, Taj Hotel Bengaluru, Falaknuma Palace Hyderabad"
+    }
+  ]
+}

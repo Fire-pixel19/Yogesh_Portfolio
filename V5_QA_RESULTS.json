@@ -1,0 +1,17 @@
+{
+  "stories": 12,
+  "images": 144,
+  "all_assets_present": true,
+  "all_timelines_present": true,
+  "jcb_image_count": 17,
+  "pitch_dates": {
+    "amazon": "January 2027",
+    "tata": "February 2027"
+  },
+  "test_method": "file-level validation + Chromium screenshot using self-contained HTML because local URL navigation restricted",
+  "known_limitations": [
+    "automated full cross-device interaction testing incomplete owing to browser environment restrictions",
+    "real device/frame-rate testing pending",
+    "contact/resume not supplied"
+  ]
+}

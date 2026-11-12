@@ -1,0 +1,157 @@
+{
+  "projects": 14,
+  "views": 158,
+  "logos": 24,
+  "missing_logos": [],
+  "dialog_top_all": [
+    [
+      "amazon",
+      true,
+      0
+    ],
+    [
+      "betla",
+      true,
+      0
+    ],
+    [
+      "jcb",
+      true,
+      0
+    ],
+    [
+      "linkedin-tc",
+      true,
+      0
+    ],
+    [
+      "jio",
+      true,
+      0
+    ],
+    [
+      "phonepe",
+      true,
+      0
+    ],
+    [
+      "anymind",
+      true,
+      0
+    ],
+    [
+      "tata",
+      true,
+      0
+    ],
+    [
+      "charcha",
+      true,
+      0
+    ],
+    [
+      "saint-gobain",
+      true,
+      0
+    ],
+    [
+      "castrol",
+      true,
+      0
+    ],
+    [
+      "linkedin-alist",
+      true,
+      0
+    ],
+    [
+      "botanical-visapur",
+      true,
+      0
+    ],
+    [
+      "fancode",
+      true,
+      0
+    ]
+  ],
+  "gallery_wide_odd": [
+    [
+      "amazon",
+      0,
+      24
+    ],
+    [
+      "betla",
+      0,
+      26
+    ],
+    [
+      "jcb",
+      1,
+      17
+    ],
+    [
+      "linkedin-tc",
+      0,
+      16
+    ],
+    [
+      "jio",
+      0,
+      16
+    ],
+    [
+      "phonepe",
+      1,
+      7
+    ],
+    [
+      "anymind",
+      0,
+      4
+    ],
+    [
+      "tata",
+      0,
+      6
+    ],
+    [
+      "charcha",
+      1,
+      11
+    ],
+    [
+      "saint-gobain",
+      1,
+      5
+    ],
+    [
+      "castrol",
+      0,
+      6
+    ],
+    [
+      "linkedin-alist",
+      0,
+      6
+    ],
+    [
+      "botanical-visapur",
+      0,
+      4
+    ],
+    [
+      "fancode",
+      0,
+      10
+    ]
+  ],
+  "theme_toggle": true,
+  "mobile_overflow": false,
+  "tablet_overflow": false,
+  "console_errors": [],
+  "content_count_final": 158,
+  "fancode_hero": "assets/fancode-02.webp",
+  "notes": "Automated chromium viewport checks (screenshots simulated via browser content with locally fulfilled asset routes). Visual real-device QA still advised."
+}
